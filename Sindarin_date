@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#Sindarin Dates
+weekday=$(date +"%a")
+month=$(date +"%m")
+case $weekday in 
+	Fri) day_sin="Ordillion";;
+	Sat) day_sin="Oranor";;
+	Sun) day_sin="Orithil";;
+	Mon) day_sin="Orgaladh";;
+	Tue) day_sin="Ormenel";;
+	Wed) day_sin="Orbelain";;
+	Thu) day_sin="Oraeron";;
+	*)
+esac
+case $month in
+	01) month_sin="Narwain";;
+	02) month_sin="Nínui";;
+	03) month_sin="Gwaeron";;
+	04) month_sin="Gwirith";;
+	05) month_sin="Lothron";;
+	06) month_sin="Nórui";;
+	07) month_sin="Cerweth";;
+	08) month_sin="Urui";;
+	09) month_sin="Ivanneth";;
+	10) month_sin="Narbeleth";;
+	11) month_sin="Hithui";;
+	12) month_sin="Girithron";;
+	*)
+esac
+
+date +"%n %t $day_sin: %d.$month_sin TA. %Y%n"
