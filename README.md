@@ -1,7 +1,7 @@
 # sindarin-term
 elvish (sindarin) date printing for the elvish shell
 
-### installtion
+### installation
 just use `epm` the built in elvish package manager.
 ```
 use epm
