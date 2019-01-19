@@ -27,4 +27,3 @@ fn date-elv [format]{
 	date --date=$sec +$format
 
 }
-date-elv "%n%t %a: %d.%m TA. %Y %n"
