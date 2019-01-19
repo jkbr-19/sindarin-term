@@ -7,8 +7,31 @@ fn date-elv [format]{
 	# %B is the full Sindarin month name
 	# see man date FORMAT for all available options
 
-	day-dict = [ &Friday="Ordillion" &Saturday="Oranor" &Sunday="Orithil" &Monday="Orgaladh" &Tuesday="Ormenel" &Wednesday="Orbelain" &Thursday="Oraeron" ]
-	mon-dict = [ &January="Narwain" &February="Nínui" &March="Gwaeron" &April="Gwirith" &May="Lothron" &June="Nórui" &July="Cerweth" &August="Urui" &September="Ivanneth" &October="Narbeleth" &November="Hithui" &December="Girithron" ]
+	day-dict = [ 
+	  &Friday="Ordillion" 
+	  &Saturday="Oranor" 
+	  &Sunday="Orithil" 
+	  &Monday="Orgaladh" 
+	  &Tuesday="Ormenel" 
+	  &Wednesday="Orbelain" 
+	  &Thursday="Oraeron" 
+	]
+
+	mon-dict = [ 
+	  &January="Narwain" 
+	  &February="Nínui" 
+	  &March="Gwaeron" 
+	  &April="Gwirith" 
+	  &May="Lothron" 
+	  &June="Nórui" 
+	  &July="Cerweth" 
+	  &August="Urui" 
+	  &September="Ivanneth" 
+	  &October="Narbeleth" 
+	  &November="Hithui" 
+	  &December="Girithron" 
+	]
+	
 	#seconds since '70
 	sec = (echo '@'(date +'%s'))
 	#fetches the current abbreviated day names, and number of month
