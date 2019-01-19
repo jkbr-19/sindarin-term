@@ -1,5 +1,3 @@
-#!/usr/bin/elvish
-
 #Sindarin Dates
 fn date-elv [format]{
 	#date-elv "format"
@@ -18,12 +16,8 @@ fn date-elv [format]{
 	per-m = (date --date=$sec +"%m")
 	day-sin = $day-dict[$per-a]
 	mon-sin = $mon-dict[(- $per-m 1)]
-	exp-a = (echo 's/%a/'$day-sin'/g')
-	exp-m = (echo 's/%m/'$mon-sin'/g')
-	
-	format = (echo $format | sed -e $exp-a)
-	format = (echo $format | sed -e $exp-m)
+	format = (replaces &max=-1 "%a" $day-sin $format)
+	format = (replaces &max=-1 "%m" $mon-sin $format)
 
 	date --date=$sec +$format
-
 }
