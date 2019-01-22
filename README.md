@@ -1,5 +1,5 @@
 # sindarin-term
-elvish (sindarin) date printing for the elvish shell
+elvish (sindarin) date printing for the [Elvish](https://elv.sh/) shell.
 
 ### installation
 just use `epm` the built in elvish package manager.
