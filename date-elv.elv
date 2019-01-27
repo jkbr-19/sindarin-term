@@ -8,13 +8,13 @@ fn date-elv [format]{
 	# see man date FORMAT for all available options
 
 	day-dict = [ 
-	  &Friday="Ordillion" 
-	  &Saturday="Oranor" 
-	  &Sunday="Orithil" 
-	  &Monday="Orgaladh" 
-	  &Tuesday="Ormenel" 
-	  &Wednesday="Orbelain" 
-	  &Thursday="Oraeron" 
+	  &Saturday="Orgillion" 
+	  &Sunday="Oranor" 
+	  &Monday="Orithil" 
+	  &Tuesday="Orgaladh" 
+	  &Wednesday="Ormenel" 
+	  &Thursday="Orbelain" 
+	  &Friday="Oraeron" 
 	]
 
 	mon-dict = [ 
