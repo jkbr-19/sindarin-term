@@ -42,5 +42,5 @@ fn date-elv [format]{
 	format = (replaces &max=-1 "%A" $day-sin $format)
 	format = (replaces &max=-1 "%B" $mon-sin $format)
 
-	date --date=$sec +$format
+	date --date=$sec +$"$format"
 }
