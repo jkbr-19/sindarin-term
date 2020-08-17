@@ -1,3 +1,4 @@
+use str
 #Sindarin or Quenya Dates
 fn date-elv [ option format ]{
 	#date-elv "option format"
@@ -75,8 +76,8 @@ fn date-elv [ option format ]{
 	per-B = (date --date=$sec +"%B")
 	day-sin = $day-dict[$per-A]
 	mon-sin = $mon-dict[$per-B]
-	format = (replaces &max=-1 "%A" $day-sin $format)
-	format = (replaces &max=-1 "%B" $mon-sin $format)
+	format = (str:replace "%A" $day-sin $format)
+	format = (str:replace "%B" $mon-sin $format)
 
 	date --date=$sec +$format
 }
