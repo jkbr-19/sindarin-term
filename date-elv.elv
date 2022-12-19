@@ -32,7 +32,7 @@ fn date-elv {| option format |
 		  &April="Gwirith" 
 		  &May="Lothron" 
 		  &June="Nórui" 
-		  &July="Cerweth" 
+		  &July="Cerveth" 
 		  &August="Urui" 
 		  &September="Ivanneth" 
 		  &October="Narbeleth" 
