@@ -16,7 +16,7 @@ fn date-elv {| option format |
 
 	if (==s "-S" $option) {
 		set day-dict = [ 
-		  &Saturday="Orgillion" 
+		  &Saturday="Orgilion" 
 		  &Sunday="Oranor" 
 		  &Monday="Orithil" 
 		  &Tuesday="Orgaladh" 
